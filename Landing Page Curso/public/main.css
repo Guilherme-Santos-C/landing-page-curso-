@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #0095FF;
+    --text-color: #455A64;
+    --second-color: #D9D9D9;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins";
+    color: var(--text-color);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 430vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 380vh 50vh;
+}
+
+header {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    width: 80vw;
+    height: 6rem;
+    border-radius: 2.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: 5;
+    color: var(--text-color);
+}
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem; 
+    padding: 0 1.6rem 0 4rem;
+    box-shadow: 1px 1px 20px 0 rgba(164, 164, 164, 0.749);  
+    border-radius: 3rem; 
+    font-size: 1.8rem;
+}
+nav a {
+    color: #455A64;
+}
+#inicio_ancora {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+header nav .contato-navbar-link {
+    background-color: var(--primary-color);
+    margin-left: auto;
+    padding: 0.4rem 2.2rem 0.4rem 2.2rem;
+    border-radius: 3rem;
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 70vh 120vh 80vh 100vh;
+    height: 380vh;
+    margin-top: 10vh;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.section1 h1 {
+    font-size: 7rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.section1 h1 span{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.section1 p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section2 {
+    background: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section2 .container_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2vw;
+    width: 100%;
+}
+
+.seta_section2 {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 81vh;
+    left: 50%;
+    z-index: 1;
+}
+
+.section2 h2 {
+    margin-top: 6vh;
+    font-size: 4.5rem;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.section2 span {
+    color: var(--primary-color);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    left: -10px;
+  }
+
+.container_cards_row1, .container_cards_row2{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.container_cards_row2 {
+    margin-top: 2%;
+}
+
+.card_disciplina {
+    min-width: 18%;
+    max-width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    box-shadow: 1px 1px 20px 0 rgba(164, 164, 164, 0.749);  
+}
+
+.card_disciplina img {
+    width: 100%;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+.card_disciplina_text_container {
+    width: 100%;
+    height: 100%;
+}
+
+.card_disciplina h5 {
+    font-size: 2.2rem;
+    margin-top: 4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.card_disciplina p {
+    font-size: 1.9rem;
+    margin-top: 0.2rem;
+    font-weight: 400;
+}
+
+.container_cards {
+    width: 100%;
+    height: 100%;
+}
+
+.section3 {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.section3 .content_container {
+    background-color: var(--second-color);
+    width: 85%;
+    height: 80%;
+    border-radius: 7rem;
+}
+
+.container_text_section3 .left_side h3 {
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.container_text_section3 .left_side h3 span {
+    color: var(--primary-color);
+}
+
+footer {
+    width: 100vw;
+    background-color: var(--second-color);
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-color: antiquewhite;
+    }
+} 
